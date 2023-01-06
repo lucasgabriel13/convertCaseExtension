@@ -2,6 +2,7 @@ const inputTextToConvert = document.getElementById('input-text');
 const inputTextConverted = document.getElementById('input-text-converted');
 const buttonsToExecuteCommand = document.querySelectorAll('.btn-command');
 const buttonClipboard = document.querySelector('.btn-clipboard');
+const popover = document.getElementById('popover');
 
 const COMMANDS_TO_EXECUTE = {
   sentence_case: convertToSenteceCase,
@@ -50,4 +51,9 @@ buttonsToExecuteCommand.forEach((button) => {
 buttonClipboard.addEventListener('click', async () => {
   const textToCopy = inputTextConverted.value;
   navigator.clipboard.writeText(textToCopy);
+
+  popover.style.marginTop = '-20px';
+  setTimeout(() => {
+    popover.style.marginTop = '0px';
+  }, 2500);
 });

@@ -67,10 +67,12 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .content-clipboard > input {
   border-radius: 8px 0 0 8px;
+  z-index: 5;
 }
 
 .content-clipboard > button {
@@ -80,4 +82,26 @@ button {
   padding: 10px;
   border-radius: 0 8px 8px 0;
   color: #16a34a;
+  z-index: 5;
 }
+
+.content-clipboard > button > img {
+  width: 24px;
+  height: 24px;
+}
+
+#popover {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px 10px;
+  background-color: #f1f2f5;
+  margin-top: 0px;
+  border-radius: 8px 8px 0 0;
+  font-size: 12px;
+  color: #16a34a;
+  z-index: 0;
+  transition: 1s;
+}
+
