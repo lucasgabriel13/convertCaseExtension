@@ -101,7 +101,7 @@ button {
   border-radius: 8px 8px 0 0;
   font-size: 12px;
   color: #16a34a;
-  z-index: 0;
-  transition: 1s;
+  z-index: 1;
+  transition: 0.2s;
 }
 
