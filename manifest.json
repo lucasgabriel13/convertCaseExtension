@@ -1,0 +1,14 @@
+{
+  "name": "ConvertCase",
+  "version": "1.0.0",
+  "description": "A cool extension",
+  "author": "Lucas Gonçalves",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html"
+  }
+}
